@@ -19,7 +19,7 @@ A simple RESTful Task Manager API built with **SlimPHP**, **PostgreSQL**, and **
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-org/task-manager.git
+   git clone https://github.com/srafiqdotcom/task-manager.git
    cd task-manager
    ```
 
@@ -128,7 +128,6 @@ curl -X DELETE http://localhost:8080/tasks/3 \
 
 ---
 
-Let me know if you want the same examples with `httpie`, `Postman`, or formatted for Swagger UI.
 
 ## 🐞 Troubleshooting
 
@@ -165,6 +164,3 @@ Let me know if you want the same examples with `httpie`, `Postman`, or formatted
 └── Dockerfile
 ```
 
-
-
-Let me know if you want it saved as a file or added to your repo automatically.

@@ -1,0 +1,160 @@
+type: collection.insomnia.rest/5.0
+name: slim
+meta:
+  id: wrk_72ec654226da4620ad842e8c3d15274f
+  created: 1744668460706
+  modified: 1744668460706
+collection:
+  - name: tasks
+    meta:
+      id: fld_4c1bc69ae58641f48a6d31a2e1133fae
+      created: 1744714757349
+      modified: 1744714757349
+      sortKey: -1744714757349
+    children:
+      - url: http://localhost:8080/tasks
+        name: create tasks
+        meta:
+          id: req_0fcc609186a541f0ae96928c29b172aa
+          created: 1744707456720
+          modified: 1744715093341
+          isPrivate: false
+          sortKey: -1744714761561
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	"title": "Buy groceries del",
+            	"description": "Milk, Bread, Eggs",
+            	"completed": false
+            }
+        headers:
+          - name: accept
+            value: application/json
+          - name: X-API-Key
+            value: ea7853e9-0a36-4b21-beac-860fc94d9680
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/tasks
+        name: list tasks
+        meta:
+          id: req_2c6d47a4a6b44f8b833af52d062a8e77
+          created: 1744714803728
+          modified: 1744714815610
+          isPrivate: false
+          sortKey: -1744714761661
+        method: GET
+        parameters:
+          - name: page
+            value: "1"
+            disabled: false
+          - name: limit
+            value: "10"
+            disabled: false
+        headers:
+          - name: accept
+            value: application/json
+          - name: X-API-Key
+            value: ea7853e9-0a36-4b21-beac-860fc94d9680
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/tasks/2
+        name: get task
+        meta:
+          id: req_7364c3885427428fb4de41744c9d8174
+          created: 1744714987236
+          modified: 1744715149471
+          isPrivate: false
+          sortKey: -1744714761761
+        method: GET
+        headers:
+          - name: accept
+            value: application/json
+          - name: X-API-Key
+            value: ea7853e9-0a36-4b21-beac-860fc94d9680
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/tasks/2
+        name: update task
+        meta:
+          id: req_3dd7feb8fe19443ebbf0a8c8734e3706
+          created: 1744715058991
+          modified: 1744715068792
+          isPrivate: false
+          sortKey: -1744714761861
+        method: PUT
+        body:
+          text: '{   "title": "Buy groceries updated",   "description": "Milk, Bread,
+            Eggs",   "completed": true }'
+          mimeType: application/json
+        headers:
+          - name: accept
+            value: application/json
+          - name: X-API-Key
+            value: ea7853e9-0a36-4b21-beac-860fc94d9680
+          - name: Content-Type
+            value: application/json
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: http://localhost:8080/tasks/4
+        name: delete task
+        meta:
+          id: req_12861bc8983146dfbb9e78713cbe63a2
+          created: 1744715125661
+          modified: 1744715164621
+          isPrivate: false
+          sortKey: -1744714761961
+        method: DELETE
+        headers:
+          - name: accept
+            value: "*/*"
+          - name: X-API-Key
+            value: ea7853e9-0a36-4b21-beac-860fc94d9680
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_1d5c0781012f6b8d75fd982a52c232b08e88c15c
+    created: 1744668460709
+    modified: 1744668460709
+environments:
+  name: Base Environment
+  meta:
+    id: env_1d5c0781012f6b8d75fd982a52c232b08e88c15c
+    created: 1744668460708
+    modified: 1744668460708
+    isPrivate: false
